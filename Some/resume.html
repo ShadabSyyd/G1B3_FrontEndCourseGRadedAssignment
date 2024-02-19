@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GL Resume Proj</title>
+    <script src="https://kit.fontawesome.com/8dc9411a7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resumePage.css">
+
+</head>
+<body>
+    <section id="headfoot" class="headfclass">
+        <button id="btnP">Prev</button>
+        <input type="text" id="searchBar" placeholder="Search for Keywords">
+        <button id="btnN" >Next</button>
+        <!-- <button id="resetBtn">Reset</button> -->    
+    </section>
+
+    <section id="errormsg">
+        <i class="fa-solid fa-face-frown" id="facefrownIc"></i>
+        <div id="notFound">No such results found</div></section>
+    <section id="resumeWh" class="wholeRes">
+        <section id="mainHead">
+            <!-- <img id="psspic" src="Images/pp1.png" alt=""> -->
+            <i id="psspic" class="fa-solid fa-user"></i>
+            <div id="headingm"></div>
+            <div id="appliedf"></div>
+        </section>
+
+        <section id="personalInf">
+            <section id="personalInf2">
+                <div id="perHead">Personal Information</div>
+
+                <div id="perIn"></div>
+                <div id="emailPi"></div>
+                <a id="linkedin" href="">Link</a>
+                <div id="techskil">Technical Skill</div>   
+                    <div id="courseapp"></div>
+                
+                <div id="hobb">Hobbies</div>
+                    <div id="hob"></div>
+            
+            </section>
+        </section>
+
+        <section id="mainResume">
+            <div id="wrkskil">Work Experience in Previous Company</div>
+            <section id="workexp">
+                <div id="companyn"></div>
+                <div id="position"></div>
+                <div id="startD"></div>
+                <div id="endD"></div>
+                <div id="summary"></div>
+            </section>
+            <div id="projskil">Projects</div>
+            <section id="projects">
+                <div id="projName"></div>
+            </section>
+            <div id="eduskil">Education</div>
+            <section id="education">
+                <div id="ug"></div>
+                <div id="pu"></div>
+                <div id="hs"></div>
+            </section>
+            <div id="internskil"> Internship</div>
+            <section id="internship">
+                <div id="inName"></div>
+                <div id="inPos"></div>
+                <div id="inSd"></div>
+                <div id="inEd"></div>
+                <div id="inSum"></div>
+            </section>
+            <div id="achievements">Achievements</div>
+            <section id="achievementsSec">
+                <div id="achieSum"></div>
+            </section>
+                
+        </section>
+    </section>
+    <script src="./resumeJson.js" type="module"></script>
+</body>
+</html>

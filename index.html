@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Login</title>
+    <link rel="stylesheet" href="./main.css">
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () {
+            null
+        };//Back functionality sourced from outside great learning vids as I was not able to find right part
+    </script>
+</head>
+<body>
+    <section id="page"> 
+        <div id="yelloBox">
+            <form action="" id="form1">
+             <!-- action="./resume.html" method="GET"
+              * -->
+                <label for="userName" ></label>
+                <input type="text" id="userName" placeholder="User Name" required name="emailId" value="sh@greatlearning.com"></input><br>
+                <label for="password" ></label>
+                <input type="password" id="password" placeholder="Password" required name="loginPass" value="Asdfgh@123"></input><br>
+                <button id="loginBtn" type="submit" onclick="">Login</button><br>
+                
+                <!-- <div id="invup">Invalid User Name or Password</div> -->
+            </form>
+        </div>
+    </section>
+    <script src="./main.js" type="module"></script>
+    <!-- <script>
+        function verify(){
+            const email= document.getElementById("userName").value;
+            const pass= document.getElementById("password").value;
+            if(email=="sh@greatlearning.com" && pass=="Asdfgh@123"){
+                // window.location.assign("./resume.html");
+                document.getElementById("form1").action="Some/resume.html";
+            }
+            else{
+                alert("Wrong User Name or Password");
+            }
+        }
+    </script> -->
+</body>
+</html>
